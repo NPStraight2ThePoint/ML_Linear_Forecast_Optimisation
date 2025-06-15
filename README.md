@@ -1,21 +1,6 @@
 # ML_Linear_Forecast_Optimisation
 
-# ASX ETF ML Pipeline
-
-This repository contains the machine learning pipeline for ASX ETF data analysis and portfolio optimization. It is designed as an extension of the [ASX_ETF_Yahoo_Finance_ETL](https://github.com/yourusername/ASX_ETF_Yahoo_Finance_ETL) repository, which handles the data extraction and loading processes.
-
----
-
-## Overview
-
-The ML pipeline takes the cleaned historical OHLCV data extracted via the ETL workflow and applies advanced analytical methods to generate investment insights, including:
-
-- Linear and non-linear price forecasting models
-- Portfolio optimization based on Sharpe Ratio maximization
-- Comparison of expected vs. realized portfolio metrics
-- Storage of ML-generated insights back into the PostgreSQL database
-
-This pipeline enables quantitative analysis and data-driven portfolio construction for ASX ETFs and can be adapted for other ticker universes.
+This repository contains the machine learning pipeline for ASX ETF data analysis and portfolio optimization. It is designed as an extension of the [ASX_ETF_Yahoo_Finance_ETL](https://github.com/NPStraight2ThePoint/ASX_ETF_Yahoo_Finance_ETL) repository, which handles the data extraction and loading process.
 
 ---
 
@@ -28,12 +13,23 @@ This pipeline enables quantitative analysis and data-driven portfolio constructi
 
 ---
 
+## Overview
+
+The ML pipeline takes the cleaned historical OHLCV data extracted via the ETL workflow and applies advanced analytical methods to generate investment insights, including:
+
+- OLS - Linear regression price targets for various settings (expanding/sliding training window, forward delta, in and out of sample duration
+- Delta scaled standard deviation estimations.
+- Model Parameters / Coefficients: Residual, Intercept, Slope
+- Performance Metrics: R², MAE, MSE, MAPE
+- optimal weights/max Sharpe Ratio in and out of sample -> Expected vs Actual universe mapping
+
+---
+
 ## Tech Stack
 
 - Python (pandas, numpy, scipy, sklearn)
-- PostgreSQL (database for historical data and insights)
-- SQLAlchemy (database connection and ORM)
-- Jupyter Notebooks / Scripts for experimentation and automation
+- PostgreSQL (database)
+- SQLAlchemy/psycopg2 (database connection and ORM)
 
 ---
 
@@ -48,7 +44,7 @@ This pipeline enables quantitative analysis and data-driven portfolio constructi
 
 ## Notes
 
-- This repository is designed as a companion to the [ASX_ETF_Yahoo_Finance_ETL](https://github.com/yourusername/ASX_ETF_Yahoo_Finance_ETL) repo. 
+- This repository is an extention of the [ASX_ETF_Yahoo_Finance_ETL](https://github.com/NPStraight2ThePoint/ASX_ETF_Yahoo_Finance_ETL) repo. 
 - While tailored for ASX ETFs, the ML pipeline can be adapted for any ticker list with appropriate data.
 - Future enhancements may include additional model types and risk management features.
 
