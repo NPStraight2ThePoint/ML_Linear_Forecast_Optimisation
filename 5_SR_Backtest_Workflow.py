@@ -9,7 +9,7 @@ import psycopg2
 conn = psycopg2.connect(
     dbname="Yahoo_Finance_API",
     user="postgres",
-    password="Arxidolemios39",
+    password="....",
     host="localhost",
     port=5432
 )
@@ -187,7 +187,7 @@ for idx, row in settings_df.iterrows():
 
     # SQLAlchemy engine setup - update your credentials here
     username = "postgres"
-    password = "Arxidolemios39"
+    password = "....."
     host = "localhost"
     port = "5432"
     database = "Yahoo_Finance_API"
