@@ -7,7 +7,7 @@ import os
 # --- Settings ---
 folder_path = 'temp_data/linear_forecasts_simple'  # your folder with CSVs
 table_name = 'simple_linear_forecasts'
-db_url = 'postgresql://postgres:Arxidolemios39@localhost:5432/Yahoo_Finance_API'  # replace this
+db_url = 'postgresql://postgres:....@localhost:5432/Yahoo_Finance_API'  # replace this
 
 engine = create_engine(db_url)
 metadata = MetaData()
