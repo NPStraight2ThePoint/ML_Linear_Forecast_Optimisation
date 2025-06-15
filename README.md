@@ -15,13 +15,13 @@ This repository contains the machine learning pipeline for ASX ETF data analysis
 
 ## Overview
 
-The ML pipeline takes the cleaned historical OHLCV data extracted via the ETL workflow and applies advanced analytical methods to generate investment insights, including:
+The ML pipeline takes the cleaned historical OHLCV data extracted via the ETL workflow and applies advanced analytical methods, including:
 
-- OLS - Linear regression price targets for various settings (expanding/sliding training window, forward delta, in and out of sample duration
-- Delta scaled standard deviation estimations.
+- OLS - Linear regression price targets for various settings (expanding/sliding training windows, forward delta, in and out of sample durations)
+- Standard deviation & correlation estimations.
 - Model Parameters / Coefficients: Residual, Intercept, Slope
 - Performance Metrics: R², MAE, MSE, MAPE
-- optimal weights/max Sharpe Ratio in and out of sample -> Expected vs Actual universe mapping
+- Optimal weights/max Sharpe Ratio in and out of sample -> Expected vs Actual universe mapping.
 
 ---
 
