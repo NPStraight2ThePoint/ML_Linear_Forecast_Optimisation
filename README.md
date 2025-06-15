@@ -50,9 +50,21 @@ The ML pipeline takes the cleaned historical OHLCV data extracted via the ETL wo
 
 ---
 
+### 🆔 Project Info
+
+**Author:** *Nicholas Papadimitris*  
+**Created on:** *15/06/2025 9:54 PM* (UTC)    
+**Project ID:** `Finance_Project_NP_15_Jun2025`  
+**GitHub:** [My GitHub](https://github.com/NPStraight2ThePoint)
+
+📧 **Email:** nicholas.papadimitris@gmail.com  
+💼 **LinkedIn:** [Nicholas Papadimitris](https://www.linkedin.com/in/nicholas-papadimitris/)
+
+---
+
 ## License
 
-MIT License
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
 ---
 
