@@ -29,7 +29,7 @@ def recalc_stdev_delta_return(row):
     return scaled_stdev
 
 # --- Configuration ---
-db_url = 'postgresql://postgres:Arxidolemios39@localhost:5432/Yahoo_Finance_API'  # UPDATE THIS
+db_url = 'postgresql://postgres:...@localhost:5432/Yahoo_Finance_API'  # UPDATE THIS
 closes_table = 'asx_etf_ohlcv'
 forecasts_table = 'simple_linear_forecasts'
 output_path = 'temp_data/linear_forecasts_simple'
